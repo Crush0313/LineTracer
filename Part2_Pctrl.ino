@@ -6,12 +6,12 @@
 //모터 외부전원 시 OPT 점퍼캡 제거 필수
 
 bool isOnLine[5];
-int[] IR = {2,3,4,5,6}
+int IR[5] = {2,3,4,5,6}
 int count;
 int sum;
 
 float error = 0;
-#define Kp 1 //블루투스로 값 바꿀건지, 매번 연결해 바꿀지 결정
+#define Kp 40 //블루투스로 값 바꿀건지, 매번 연결해 바꿀지 결정
 int P;
 
 void setup() {
